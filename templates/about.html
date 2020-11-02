@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!-- Docs Head-->
+<section class="docs-head bg-primary py-3">
+    <div class="container grid">
+        <div>
+            <h1 class="md">Documentation</h1>
+            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat pariatur quisquam nulla fuga assumenda inventore veritatis similique aut soluta suscipit.</p>
+        </div>
+        <img src="../static/images/docs.png" alt="">
+    </div>
+</section>
+<!-- Docs Main-->
+<section class="docs-main my-4">
+    <div class="container grid">
+        <div class="card bg-light p-3">
+            <h3 class="my-2">Personal information</h3>
+            <nav>
+                <ul>
+                    <li><a class="text-primary" href="#">Introduction</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Education</a></li>
+                </ul>
+            </nav>
+            <h3 class="my-2">Career</h3>
+            <nav>
+                <ul>
+                    <li><a href="">Administration</a></li>
+                    <li><a href="">Hospitality</a></li>
+                    <li><a href="">Finance</a></li>
+                    <li><a href="">Programming</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="card">
+            <h2>Introduction</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime quaerat voluptas rem quae sint repudiandae doloribus repellat quo. Obcaecati minus aliquam error sequi eius nostrum voluptatum quod consequatur impedit quibusdam?</p>
+            <div class="alert alert-success">
+                <i class="fas fa-info"></i>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, perferendis.
+            </div>
+            <h3>Lorem, ipsum dolor.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sapiente, odit dignissimos consectetur quae laudantium sequi quos tempore dolor eveniet?</p>
+            <a href="#" class="btn btn-primary">Read more</a>
+            <h3>Get your API key</h3>
+            <p>Mac</p>
+            <pre><code>$ hello world</code></pre>
+            <p>Linux</p>
+            <pre><code>$ hello world</code></pre>
+            <p>Windows</p>
+            <pre><code>$ hello world</code></pre>
+
+        </div>
+    </div>
+
+</section>
+{% endblock content %}
