@@ -22,8 +22,12 @@ def success():
     if request.method == "POST":
         name = request.form['name']
         email = request.form['email']
-    return render_template('success.html', name=name, email=email)
-
+        message = 'User {name}, {email} have requested contact'.format(email=email, name=name)
+        server = smtplib.SMTP("smtp.gmail.com", 587)
+        server.starttls()
+        server.login('mjaroherokuapp@gmail.com', 'mjaroherokuapp1234')
+        server.sendmail('mjaroszewski1979@gmail.com', email, message)
+    return render_template('success.html', name=name)
 
 if __name__=='__main__':
     port = int(os.environ.get("PORT", 5000))
