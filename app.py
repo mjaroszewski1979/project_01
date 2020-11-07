@@ -1,3 +1,4 @@
+from flask import Flask, redirect, render_template, url_for, request, session, g
 import smtplib
 import imghdr
 from email.message import EmailMessage
@@ -16,8 +17,9 @@ users = []
 users.append(User(id=1, username='maciej', password='jaroszewski'))
 
 app = Flask(__name__)
-port = int(os.environ.get('PORT', 5000))
 app.secret_key = 'secretkey'
+port = int(os.environ.get('PORT', 5000))
+
 
 @app.before_request
 def before_request():
