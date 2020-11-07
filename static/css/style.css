@@ -6,7 +6,7 @@
     --dark-color: rgb(82, 75, 75);
     --light-color: rgb(201, 196, 196);
     --success-color: rgb(162, 185, 171);
-    --error-color: rgb(245, 202, 202);
+    --info-color: rgb(124, 117, 136);
 }
 * {
     box-sizing: border-box;
@@ -38,9 +38,11 @@ img {
     width: 100%;
 }
 code, pre {
-    background: black;
+    background: rgb(57, 77, 64);
     color: white;
-    padding: 10px;
+    padding: 7px;
+    font-size: 15px;
+
 }
 /* Navbar */
 .navbar {
@@ -232,8 +234,8 @@ code, pre {
     background-color: var(--success-color);
     color: white;
 }
-.alert-error {
-    background-color: var(--error-color);
+.alert-info {
+    background-color: var(--info-color);
     color: white;
 }
 .card {
@@ -389,6 +391,10 @@ code, pre {
     grid-column: 1 / span 2;
 }
 /* Docs */
+.docs-head .lead {
+    width: 750px;
+    text-align: justify;
+}
 .docs-main h3 {
     margin: 20px;
 }
