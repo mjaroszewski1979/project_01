@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>Maciej Portfolio Website</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../static/images/devmj.png" alt="">
+        </div>
+        <button class="nav-toggle" aria-label="toggle-navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Hi, I am <strong>Maciej Jaroszewski</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">self-taught-pythonista</p>
+        <img src="../static/images/foto1.png" alt="picture of me" class="intro__img">
+    </section>
+
+    <!-- Services -->
+    <section class="my-services" id="services">
+        <h2 class="section__title section__title--services">What i do</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Web developement and SEO</h3>
+                <p>Andreas Clenow had once suggested that instead of reading investing books one should learn programming. Since he is my trading authority that's exactly what I did and I think it's the right choice. With ability to combine my love for visual and mathematical aspects of life I'm on the path to success. Most recently i started testing SEO strategies which I found very interesting.</p>
+            </div>
+            <div class="service">
+                <h3>Day trading futures markets</h3>
+                <p>After graduating from Secondary Technical School of Economics in Poznań I was forced to work abroad for several years. Being a foreigner I had accepted the jobs available and these were mainly in catering industry. Only few years ago I have decided to focus on what I realy like to do in my life. My first choice was quantitative finance and it has been nothing short of amazing.</p>
+            </div>        
+        </div>
+        <a href="#work" class="btn">My work</a>
+    </section>
+
+    <!-- About me -->
+    <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">About me</h2>
+        <p class="section__subtitle section__subtitle--about">Developer and systematic trend follower based out of Poznań</p>
+        <div class="about-me__body">
+            <p>I am hard working professional with passion for new technologies and financial markets. I like to challenge myself on a regular basis to set goals in life and then strive to accomplish them. I like to think of myself as a very creative person. I can easily come up with a unique perspective about a certain issue due to my wide range of interests and hobbies. Problems don’t unsettle me – they inspire me instead. My best quality is the fact that I am a fast learner. Even if I don’t have that much experience with a certain task, with a bit of guidance I will be able to accomplish it quickly.</p>
+        </div>
+        <img src="../static/images/devmj01.png" alt="" class="about-me__img">
+    </section>
+
+    <!-- My work -->
+    <section class="my-work" id="work">
+        <h2 class="section__title section__title--work">My work</h2>
+        <p class="section__subtitle section__subtitle--work">Selected design examples</p>
+        <div class="portfolio">
+            <a href="https://github.com/mjaroszewski1979/project_03" class="portfolio__item" target=”_blank”>
+               <img src="../static/images/portfolio-01.png" alt="" class="portfolio__img"> 
+            </a>
+            <a href="https://github.com/mjaroszewski1979/Data-analysis-and-visualization-with-Python/blob/master/Using%20Matplotlib%20and%20Seaborn%20to%20display%20data%20downloaded%20with%20Yahoo%20Finance%20API..ipynb" class="portfolio__item" target=”_blank”>
+               <img src="../static/images/portfolio-02.png" alt="" class="portfolio__img"> 
+            </a>
+            <a href="https://github.com/mjaroszewski1979" class="portfolio__item" target=”_blank”>
+               <img src="../static/images/portfolio-03.png" alt="" class="portfolio__img"> 
+            </a>
+            <a href="https://github.com/mjaroszewski1979/project_04" class="portfolio__item" target=”_blank”>
+               <img src="../static/images/portfolio-04.png" alt="" class="portfolio__img"> 
+            </a>
+            <a href="https://github.com/mjaroszewski1979/project_01" class="portfolio__item" target=”_blank”>
+               <img src="../static/images/portfolio-05.png" alt="" class="portfolio__img"> 
+            </a>
+            <a href="https://github.com/mjaroszewski1979" class="portfolio__item" target=”_blank”>
+               <img src="../static/images/portfolio-06.png" alt="" class="portfolio__img"> 
+            </a>
+            <a href="{{ url_for('portfolio')}}" class="portfolio__item">
+               <img src="../static/images/portfolio-07.png" alt="" class="portfolio__img"> 
+            </a>
+            <a href="{{ url_for('portfolio')}}" class="portfolio__item">
+               <img src="../static/images/portfolio-08.png" alt="" class="portfolio__img"> 
+            </a>
+            <a href="{{ url_for('portfolio')}}" class="portfolio__item">
+               <img src="../static/images/portfolio-09.png" alt="" class="portfolio__img"> 
+            </a>
+            <a href="https://www.instagram.com/p/CIQGvHwnzJ7/" class="portfolio__item" target=”_blank”>
+               <img src="../static/images/portfolio-10.png" alt="" class="portfolio__img"> 
+            </a>
+            <a href="https://www.instagram.com/p/CIRNBnInAwl/" class="portfolio__item" target=”_blank”>
+               <img src="../static/images/portfolio-11.png" alt="" class="portfolio__img"> 
+            </a>
+            <a href="https://www.instagram.com/p/CIVceV4HlJH/" class="portfolio__item" target=”_blank”>
+               <img src="../static/images/portfolio-12.png" alt="" class="portfolio__img"> 
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="mailto:mjaroszewski1979@gmail.com" class="footer__link">mjaroszewski1979@gmail.com</a>
+        <ul class="social-list">
+            <li class="social-list__item"><a href="https://github.com/mjaroszewski1979" class="social-list__link" target=”_blank”><i class="fab fa-github-square"></i></a></li>
+            <li class="social-list__item"><a href="https://www.linkedin.com/in/maciej-jaroszewski-0aa0451bb/" class="social-list__link" target=”_blank”><i class="fab fa-linkedin"></i></a></li>
+            <li class="social-list__item"><a href="https://www.youtube.com/channel/UCv6-YR1m9L79uyEXDbQR2rg" class="social-list__link" target=”_blank”><i class="fab fa-youtube-square"></i></a></li>
+            <li class="social-list__item"><a href="https://www.facebook.com/Trading-Simplified-100224861947602" class="social-list__link" target=”_blank”><i class="fab fa-facebook-square"></i></a></li>
+        </ul>
+    </footer>
+  <script>
+      const navToggle = document.querySelector('.nav-toggle');
+      const navLinks = document.querySelectorAll('.nav__link')
+
+      navToggle.addEventListener('click', () => {
+          document.body.classList.toggle('nav-open');
+      });
+
+      navLinks.forEach(link => {
+          link.addEventListener('click', () => {
+              document.body.classList.remove('nav-open');
+          })
+      })
+  </script>
+</body>
+</html>
+
